@@ -2,7 +2,7 @@
 #include <cmath>
 using namespace std;
 
-class punkt
+class point
 {
     public: 
         double x,y;
@@ -16,14 +16,14 @@ class punkt
 
 };
 
-double distance(punkt P1, punkt P2 )
+double distance(point P1, point P2 )
 {
     return sqrt((P2.x-P1.x)*(P2.x-P1.x)+ (P2.y-P1.y)*(P2.y-P1.y));
 }
 
 int main()
 {
-    punkt A,B;
+    point A,B;
     A.read();
     B.read();
     cout<<"Odleglosc = "<<distance(A,B);
