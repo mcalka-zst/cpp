@@ -14,8 +14,7 @@ public:
        void wyswietl()
        {
               cout << "Pole wynosi " << pole() << endl;
-              cout << "Obwod wynosi " << obwod() << endl
-                   << endl;
+              cout << "Obwod wynosi " << obwod() << endl << endl;
        }
 };
 //----------------------------------------------------------------------
@@ -25,7 +24,7 @@ private:
        double r;
 
 public:
-       kolo()
+       void czytaj()
        {
               cout << "Podaj promien r=";
               cin >> r;
@@ -46,7 +45,7 @@ private:
        double a;
 
 public:
-       kwadrat()
+       void czytaj()
        {
               cout << "Podaj bok a=";
               cin >> a;
@@ -66,10 +65,11 @@ int main()
        //figura fig; //BLAD
        cout << "Kolo\n";
        kolo kol;
+       kol.czytaj();
        kol.wyswietl();
        cout << " \n\nKwadrat\n";
        kwadrat kwad;
+       kwad.czytaj();
        kwad.wyswietl();
-       system("PAUSE");
        return 0;
 }
