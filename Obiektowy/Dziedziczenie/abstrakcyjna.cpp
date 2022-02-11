@@ -9,12 +9,13 @@ protected:
        const double pi = 3.14;
 
 public:
-       virtual double pole() = 0; //metody czysto wirtualne
+       virtual double pole() = 0; // metody czysto wirtualne
        virtual double obwod() = 0;
        void wyswietl()
        {
               cout << "Pole wynosi " << pole() << endl;
-              cout << "Obwod wynosi " << obwod() << endl << endl;
+              cout << "Obwod wynosi " << obwod() << endl
+                   << endl;
        }
 };
 //----------------------------------------------------------------------
@@ -24,6 +25,10 @@ private:
        double r;
 
 public:
+       kolo()
+       {
+              cout << "\nKOLO\n";
+       }
        void czytaj()
        {
               cout << "Podaj promien r=";
@@ -45,6 +50,10 @@ private:
        double a;
 
 public:
+       kwadrat()
+       {
+              cout << "\nKwadrat\n";
+       }
        void czytaj()
        {
               cout << "Podaj bok a=";
@@ -62,12 +71,10 @@ public:
 //------------------------------------------------------------------------
 int main()
 {
-       //figura fig; //BLAD
-       cout << "Kolo\n";
+       // figura fig; //BLAD;
        kolo kol;
        kol.czytaj();
        kol.wyswietl();
-       cout << " \n\nKwadrat\n";
        kwadrat kwad;
        kwad.czytaj();
        kwad.wyswietl();
