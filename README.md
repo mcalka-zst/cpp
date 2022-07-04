@@ -1,2 +1,2 @@
 # cpp
-# Materiały dla uczniów ZST Kolbuszowa
+Materiały dla uczniów ZST Kolbuszowa
